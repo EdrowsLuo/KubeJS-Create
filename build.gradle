@@ -60,7 +60,7 @@ dependencies {
 	modApi "com.jozufozu.flywheel:flywheel-forge-${rootProject.minecraft_version}:${rootProject.flywheel_version}"
 	modApi "com.tterrag.registrate:Registrate:${registrate_version}"
 
-	modLocalRuntime modCompileOnly("curse.maven:jei-238222:4494410")
+	modLocalRuntime modCompileOnly("curse.maven:jei-238222:4712868")
 }
 
 processResources {
@@ -102,7 +102,7 @@ if (ENV.CURSEFORGE_KEY) {
 			id = project.curseforge_id
 			releaseType = project.curseforge_type
 			addGameVersion "Forge"
-			addGameVersion "1.19.2"
+			addGameVersion "1.20.1"
 			mainArtifact(remapJar.archivePath)
 			relations {
 				requiredDependency 'kubejs'
